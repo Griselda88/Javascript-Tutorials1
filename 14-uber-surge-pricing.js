@@ -15,4 +15,22 @@ function surgePricing(distance, surgeHours){
     }
 }
 
-console.log(surgePricing(2, false))
+console.log(surgePricing(20, false));
+
+
+function calculateUberRideFare(distanceInMiles, isDuringSurgeHours) {
+  if (isNaN(distanceInMiles) || distanceInMiles < 0 ) {
+    return "Invalid Number. Please enter the number of subscribers you have";
+  }
+
+  if (typeof isDuringSurgeHours !== "boolean") {
+    return "Please enter a valid value for this parameter"
+  }
+
+  const baseFare = 500
+  const surgeMultiplier = 1.8
+
+  return ((baseFare + (distanceInMiles > 10 ? 2 : 0)) * (isDuringSurgeHours ? surgeMultiplier : 1) ) / 100
+}
+
+console.log(calculateUberRideFare(20, false))
