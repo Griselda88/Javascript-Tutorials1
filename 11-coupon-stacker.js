@@ -1,18 +1,26 @@
-function couponStacker(cart_total){
-    let coupon_discount = (cart_total * 15) /100;
+function bestCouponToUse(cartTotal) {
 
-    let coupon2_discount = 10;
+    if (isNaN(cartTotal) || cartTotal < 0 || !Number.isInteger(cartTotal)) {
+        return "Invalid Number. Please enter the total of your cart";
+    }
 
-    if (coupon_discount > coupon2_discount){
-        return " first coupon saves customer more money"
-    }
-    else if (coupon_discount < coupon2_discount){
-        return " second coupon saves customer more money"
-    }
-    
-    else{
-        "Both cupons save customer same amount"
-    }
+    const firstCoupon = (cartTotal * 15) / 100;
+
+    const secondCoupon = 10;
+
+    const CouponThatSavesMoreMoney = firstCoupon > secondCoupon ? "First coupon saves customer more money" : "Second coupon saves customer more money";
+    return CouponThatSavesMoreMoney;
+
+    // if (firstCoupon > secondCoupon){
+    //     return " first coupon saves customer more money"
+    // }
+    // else if (firstCoupon < secondCoupon){
+    //     return " second coupon saves customer more money"
+    // }
+
+    // else{
+    //     "Both coupons save customer same amount"
+    // }
 
 }
-console.log(couponStacker(1000))
+console.log(bestCouponToUse(1000))

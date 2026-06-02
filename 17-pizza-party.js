@@ -1,10 +1,11 @@
 function wholePizza(guests){
+    if (isNaN(guests) || guests < 0 || !Number.isInteger(guests)) {
+        return "Invalid Number. Please enter the total of guests for the party";
+    }
+    const totalSlices = guests * 3
 
-    let totalSlices = guests * 3
+    const wholePizzaToBuy= Math.ceil(totalSlices/ 8); 
 
-    let pizzaNeeded = Math.ceil(totalSlices/ 8); 
-
-    return pizzaNeeded
+    return wholePizzaToBuy
 }
-
-console.log( wholePizza(10));
+console.log(wholePizza(10));
