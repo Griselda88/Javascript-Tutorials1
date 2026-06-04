@@ -1,18 +1,18 @@
-function passwordStrengthChecker(password) {
+// function passwordStrengthChecker(password) {
 
-    if (password.length > 10 && password.includes("!")) {
-        return "Strong"
-    }
-    else if (password.length < 11 || password.length >= 6) {
-        return "Medium"
-    }
+//     if (password.length > 10 && password.includes("!")) {
+//         return "Strong"
+//     }
+//     else if (password.length < 11 || password.length >= 6) {
+//         return "Medium"
+//     }
 
-    else {
-        return "Weak"
-    }
+//     else {
+//         return "Weak"
+//     }
 
-}
-console.log(passwordStrengthChecker("ajdkfnkfgnn"));
+// }
+// console.log(passwordStrengthChecker("ajdkfnkfgnn"));
 
 
 function passwordStrengthChecker(password) {

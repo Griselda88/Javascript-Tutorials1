@@ -1,24 +1,24 @@
 
-const numberOfSubs = 999
+// const numberOfSubs = 999
 
-function calculateEarning(subscribers) {
-    let amountPerSub = 2.50;
-    let totalEarnings = subscribers * amountPerSub
-    let platformCut;
+// function calculateEarning(subscribers) {
+//     let amountPerSub = 2.50;
+//     let totalEarnings = subscribers * amountPerSub
+//     let platformCut;
 
-    if (subscribers > 1000){
-        platformCut = 0.20;
-    } 
-      else{
-        platformCut = 0.30;
-    }
+//     if (subscribers > 1000){
+//         platformCut = 0.20;
+//     } 
+//       else{
+//         platformCut = 0.30;
+//     }
 
-    let takeHomePay = totalEarnings - (totalEarnings * platformCut)
+//     let takeHomePay = totalEarnings - (totalEarnings * platformCut)
 
-    return takeHomePay
+//     return takeHomePay
 
-}
-console.log(calculateEarning(numberOfSubs))
+// }
+// console.log(calculateEarning(numberOfSubs))
     
 
 

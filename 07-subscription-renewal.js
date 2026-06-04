@@ -1,20 +1,20 @@
-function subscriptionRenewal(balance, subscriptionCost) {
+// function subscriptionRenewal(balance, subscriptionCost) {
 
-    balance = balance - subscriptionCost;
+//     balance = balance - subscriptionCost;
 
-    if (balance >= subscriptionCost) {
-        return `${balance}`
-    }
-    else if (balance < 5) {
-        return "Negative Overdraft"
-    }
-    else {
-        return "Cancel Subscription"
-    }
+//     if (balance >= subscriptionCost) {
+//         return `${balance}`
+//     }
+//     else if (balance < 5) {
+//         return "Negative Overdraft"
+//     }
+//     else {
+//         return "Cancel Subscription"
+//     }
 
 
-}
-console.log(subscriptionRenewal(2, 20))
+// }
+// console.log(subscriptionRenewal(2, 20))
 
 
 function subscriptionRenewal(balance, subscriptionCost) {

@@ -19,8 +19,11 @@
 
 
 function calculateAverageAndRank(level1, level2, level3) {
-    // if (isNaN(level1) || isNaN(level2) || isNaN(level3) || level1 < 1 || level2 < 1 || level3 < 1 || !Number.isInteger(level1) || 
-    //     !Number.isInteger(level2) || !Number.isInteger(level3))
+     if (isNaN(level1) || level1 < 0 || level1 > 100|| !Number.isInteger(level1) ||
+        isNaN(level2) || level2 < 0 || level2 > 100 || !Number.isInteger(level2) ||
+        isNaN(level3) || level3 < 0 || level3 > 100|| !Number.isInteger(level3)){
+        return " Invalid Number. Please give the right input for each level"
+    }
 
 
     const totalTimeForAllLevels = level1 + level2 + level3
